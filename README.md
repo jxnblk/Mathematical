@@ -1,4 +1,4 @@
 Mathematical
 ============
 
-A simple web framework
+A simple, responsive web framework
