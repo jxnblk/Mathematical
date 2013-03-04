@@ -1,4 +1,4 @@
-mathematical
+Mathematical
 ============
 
 A simple web framework
