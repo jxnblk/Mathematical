@@ -28,7 +28,7 @@ h2, .h2 {
   margin-top: .5em;
 }
 
-p, ul, ol, .p {
+p, ul, ol, .p, h3, h4, h5, h6 {
   font-size: 1.125rem;
   margin-top: 1em;
 }
@@ -44,20 +44,20 @@ strong, .strong {
 
 h1+h2, h2+h1 { margin-top: 0; }
 
-@media screen and (min-width: 480px) {
-  h1, .h1 { font-size: 3rem; }
-  h2, .h2 { font-size: 1.75rem; }
-  p, ul, ol, .p { font-size: 1.25rem; }
-  small, .small { font-size: 1rem; }
-}
-
-@media screen and (min-width: 640px) {
-  h1, .h1 { font-size: 4rem; }
-  h2, .h2 { font-size: 2rem; } 
-}
-
-@media screen and (min-width: 1024px) {
-  h1, .h1 { font-size: 6rem; }
-  h2, .h2 { font-size: 3rem; }
-}
+    @media screen and (min-width: 480px) {
+      h1, .h1 { font-size: 3rem; }
+      h2, .h2 { font-size: 1.75rem; }
+      p, ul, ol, .p { font-size: 1.25rem; }
+      small, .small { font-size: 1rem; }
+    }
+    
+    @media screen and (min-width: 640px) {
+      h1, .h1 { font-size: 4rem; }
+      h2, .h2 { font-size: 2rem; } 
+    }
+    
+    @media screen and (min-width: 1024px) {
+      h1, .h1 { font-size: 6rem; }
+      h2, .h2 { font-size: 3rem; }
+    }
 
