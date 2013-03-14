@@ -1,0 +1,65 @@
+/*
+
+
+  Mathematical Type
+  A Simple Type Scale for the Web
+  
+  Made with love by Jxnblk
+  
+
+*/
+
+
+body {
+  font-size: 100%;                        // Sets base font to 16px in most browsers
+  font-weight: 400;
+  line-height: 1.5;                       // line-height is equal to 24px
+}
+
+h1, .h1,
+h2, .h2 {
+  line-height: 1.25;                      
+  margin-top: .5em;
+}
+
+h1, .h1 {
+  font-size: 2rem;                        // font-size: 32px
+}
+
+h2, .h2 {
+  font-size: 1.25rem;                     // font-size: 20px
+}
+
+p, .p, ul, ol, dl {
+  font-size: 1.125rem;                    // font-size: 18px
+  margin-top: 1em;
+}
+
+small, .small {
+  font-size: .875rem;                     // font-size: 14px
+  -webkit-text-size-adjust: 100%;
+}
+
+strong, .strong {
+  font-weight: 700;
+}
+
+h1+h2, h2+h1 { margin-top: 0; }
+
+@media screen and (min-width: 30rem) {
+  h1, .h1 { font-size: 3rem; }            // font-size: 48px
+  h2, .h2 { font-size: 1.75rem; }         // font-size: 28px
+  p, ul, ol, .p { font-size: 1.25rem; }   // font-size: 20px
+  small, .small { font-size: 1rem; }      // font-size: 16px
+}
+
+@media screen and (min-width: 40rem) {
+  h1, .h1 { font-size: 4rem; }           // font-size: 64px
+  h2, .h2 { font-size: 2rem; }           // font-size: 32px
+}
+
+@media screen and (min-width: 64rem) {
+  h1, .h1 { font-size: 6rem; }           // font-size: 96px
+  h2, .h2 { font-size: 3rem; }           // font-size: 48px
+}
+
