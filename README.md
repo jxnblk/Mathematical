@@ -2,6 +2,7 @@
 
 A simple, responsive web framework.
 
+![Mathematical Screenshot](screenshot.png)
 
 ## Mathematical Type
 Highly readable on large and small screens. 

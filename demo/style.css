@@ -21,6 +21,7 @@ body {
 .maths {
   margin: 4rem 0;
   border: 1px solid #ccc;
+  border-radius: 0.25rem;
   padding: 1rem;
 }
 
