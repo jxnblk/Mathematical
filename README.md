@@ -1,19 +1,20 @@
 # Mathematical
-=============
 
-A simple, responsive web framework. Highly readable on large and small screens. 
+A simple, responsive web framework.
+
+
+## Mathematical Type
+Highly readable on large and small screens. 
 Consider it a series of smart defaults for headers and body copy. 
 
-## Lightweight
-Mathematical is light-weight. REALLY light-weight. Uncompressed CSS weighs in at a hefty 920 bytes. 
+### Lightweight
+Mathematical Type is light-weight. Really light-weight. Uncompressed CSS weighs in at a hefty 920 bytes. 
 Minified version is 620 bytes. 
 
-## How to Use
-Include mathematical-type.css early on. Override if needed. Will work out of the box.
+### Browser Support
+Mathematical Type uses REMs (root em units) which are supported in all new major browsers except for Opera mini. 
 
-## Browser Support
-Mathematical uses relative em units (rem) which are supported in all new major browsers except for Opera mini. 
-Currently supporting:
+Currently supported by:
 * IE9+
 * Firefox 3.6+
 * Chrome 6.0+
