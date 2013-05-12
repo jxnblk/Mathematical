@@ -1,0 +1,134 @@
+/*
+
+        Mathematical Structure
+
+
+*/
+
+.mar {    margin:         1rem; }
+.marto {  margin-top:     1rem; }
+.marri {  margin-right:   1rem; }
+.marbo {  margin-bottom:  1rem; }
+.marle {  margin-left:    1rem; }
+
+.marto2 { margin-top:     2rem; }
+.marri2 { margin-right:   2rem; }
+.marbo2 { margin-bottom:  2rem; }
+.marle2 { margin-left:    2rem; }
+
+
+.pad {    padding:        1rem; }
+.padto {  padding-top:    1rem; }
+.padri {  padding-right:  1rem; }
+.padbo {  padding-bottom: 1rem; }
+.padle {  padding-left:   1rem; }
+
+.pad2 {   padding:        2rem; }
+.padto2 { padding-top:    2rem; }
+.padri2 { padding-right:  2rem; }
+.padbo2 { padding-bottom: 2rem; }
+.padle2 { padding-left:   2rem; }
+
+
+    @media screen and (min-width: 640px) {
+      .mar {    margin:         2rem; }
+      .marto {  margin-top:     2rem; }
+      .marri {  margin-right:   2rem; }
+      .marbo {  margin-bottom:  2rem; }
+      .marle {  margin-left:    2rem; }
+      
+      .marto2 { margin-top:     4rem; }
+      .marri2 { margin-right:   4rem; }
+      .marbo2 { margin-bottom:  4rem; }
+      .marle2 { margin-left:    4rem; }
+      
+      
+      .pad {    padding:        2rem; }
+      .padto {  padding-top:    2rem; }
+      .padri {  padding-right:  2rem; }
+      .padbo {  padding-bottom: 2rem; }
+      .padle {  padding-left:   2rem; }
+      
+      .pad2 {   padding:        4rem; }
+      .padto2 { padding-top:    4rem; }
+      .padri2 { padding-right:  4rem; }
+      .padbo2 { padding-bottom: 4rem; }
+      .padle2 { padding-left:   4rem; }         
+    }
+
+.tappad {
+  display: block;
+  padding: 0 1rem;
+  line-height: 3rem;
+}
+
+.bobox { box-sizing: border-box; }
+
+.disb {  display: block; }
+.disib { display: inline-block; }
+
+.fl { float: left; }
+.fr { float: right; }
+
+.wrap { margin: 0 auto; }
+
+
+.posrel { position: relative; }
+.posabs { position: absolute; }
+
+.to0 { top:    0; }
+.ri0 { right:  0; }
+.bo0 { bottom: 0; }
+.le0 { left:   0; }
+
+.to1 { top:    1rem; }
+.ri0 { right:  1rem; }
+.bo1 { bottom: 1rem; }
+.le1 { left:   1rem; }
+
+.to2 { top:    2rem; }
+.ri2 { right:  2rem; }
+.bo2 { bottom: 2rem; }
+.le2 { left:   2rem; }
+
+.z1 { z-index: 100; }
+.z2 { z-index: 200; }
+.z3 { z-index: 300; }
+.z4 { z-index: 400; }
+.z5 { z-index: 500; }
+
+.overhide { overflow: hidden; }
+
+.scroll-y {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+
+.sq16 {  width:  16px; height:  16px; }
+.sq24 {  width:  24px; height:  24px; }
+.sq32 {  width:  32px; height:  32px; }
+.sq48 {  width:  48px; height:  48px; }
+.sq64 {  width:  64px; height:  64px; }
+//.sq80 { width: 80px; height: 80px; }
+.sq96 {  width:  96px; height:  96px; }
+.sq128 { width: 128px; height: 128px; }
+.sq160 { width: 160px; height: 160px; }
+.sq256 { width: 256px; height: 256px; }
+.sq320 { width: 320px; height: 320px; }
+.sq512 { width: 512px; height: 512px; }
+.sq768 { width: 768px; height: 768px; }
+
+.wi100 { width: 100%; }
+.wi90 {  width:  90%; }
+.wi75 {  width:  80%; }
+.wi50 {  width:  75%; }
+.wi25 {  width:  25%; }
+
+.minhi16 {  min-height:  16px; }
+.minhi24 {  min-height:  24px; }
+.minhi32 {  min-height:  32px; }
+.minhi48 {  min-height:  48px; }
+.minhi64 {  min-height:  64px; }
+.minhi96 {  min-height:  96px; }
+.minhi128 { min-height: 128px; }
