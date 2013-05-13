@@ -16,21 +16,3 @@
   .show-desktop { display: block; }
 }
 
-/*
-#mobile-large-maths, #tablet-maths, #desktop-maths { display: none; }
-
-    @media screen and (min-width: 480px) {
-      #mobile-maths { display: none; }
-      #mobile-large-maths { display: block; }
-    }
-    
-    @media screen and (min-width: 640px) {
-      #mobile-large-maths { display: none; }
-      #tablet-maths { display: block; }
-    }
-    
-    @media screen and (min-width: 1024px) {
-      #tablet-maths { display: none; }
-      #desktop-maths { display: block; }
-    }
-*/

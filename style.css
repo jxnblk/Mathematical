@@ -13,7 +13,7 @@
 
 
 */
-* {
+h1, h2, h3, h4, h5, h6, ul, ol {
   margin: 0;
   padding: 0; }
 
@@ -28,22 +28,19 @@ body {
   line-height: 1.5;
   font-weight: 400; }
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
-  font-weight: 400; }
-
 h1, .h1 {
   font-size: 2rem;
   line-height: 1.25;
-  margin-top: .5em; }
+  font-weight: 400; }
 
 h2, .h2 {
   font-size: 1.25rem;
   line-height: 1.25;
-  margin-top: .5em; }
+  font-weight: 400; }
 
 p, ul, ol, .p, h3, h4, h5, h6 {
   font-size: 1.125rem;
-  margin-top: 1em; }
+  font-weight: 400; }
 
 small, .small {
   font-size: .875rem;
@@ -58,9 +55,6 @@ strong, .bold {
 
 .txtcen {
   text-align: center; }
-
-h1 + h2, h2 + h1 {
-  margin-top: 0; }
 
 @media screen and (min-width: 480px) {
   h1, .h1 {
@@ -92,6 +86,9 @@ h1 + h2, h2 + h1 {
 
 
 */
+.mar0 {
+  margin: 0; }
+
 .mar {
   margin: 1rem; }
 
@@ -118,6 +115,9 @@ h1 + h2, h2 + h1 {
 
 .marle2 {
   margin-left: 2rem; }
+
+.pad0 {
+  padding: 0; }
 
 .pad {
   padding: 1rem; }
