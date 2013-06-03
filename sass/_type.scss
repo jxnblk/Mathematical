@@ -5,41 +5,99 @@
 
 */
 
-
-
-////////////////////////////////////////////////////////////////
-// From old CSS
-
 body {
   font-size: 100%;
   line-height: 1.5;
   font-weight: 400;
 }
 
+/* Mobile-first font sizes
+*/
 h1, .h1 {
   font-size: 2rem;
   line-height: 1.25;
-  font-weight: 400;
+  @include break(medium) {
+    font-size: 4rem;
+  }
+  @include break(large) {
+    font-size: 6rem;
+  }
 }
+  /* Use these classes to limit font sizes from enlarging at specific breakpoints
+  */
+  .h1-s {
+    font-size: 2rem;
+  }
+  .h1-m {
+    @include break(medium) {
+      font-size: 4rem;
+    }
+  }
 
 h2, .h2 {
   font-size: 1.25rem;
   line-height: 1.25;
-  font-weight: 400;
+  @include break(medium) {
+    font-size: 2rem;
+  }
+  @include break(large) {
+    font-size: 3rem;
+  }
+}
+  .h2-s {
+    font-size: 1.25rem;
+  }
+  .h2-m {
+    @include break(medium) {
+      font-size: 2rem;
+    }
+  }
+
+
+    /* Use these for more complex type scales
+    h3, .h3 {}
+    h4, .h4 {}
+    h5, .h5 {}
+    h6, .h6 {}
+    */
+
+/* Use this for simpler type scales
+*/
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1.25rem; // Used to be 1.125rem for xsmall
 }
 
-p, ul, ol, .p, h3, h4, h5, h6 {
-  font-size: 1.125rem;
-  font-weight: 400;
+p,
+ul,
+ol,
+.p {
+  font-size: 1.25rem; // Used to be 1.125rem for xsmall
+  //font-weight: 400;
 }
 
-small, .small {
+small,
+.small,
+.sm {
   font-size: .875rem;
   -webkit-text-size-adjust: 100%;
+  @include break(medium) {
+    font-size: 1rem;
+  }
 }
 
-strong, .bold {
+strong,
+.bold,
+.b {
   font-weight: 700;
+}
+.reg {
+  font-weight: normal;
+}
+.i {
+  font-style: italic;
 }
 
 .caps { 
@@ -47,22 +105,11 @@ strong, .bold {
   letter-spacing: .2em;
 }
 
+.mono {
+  font-family: "Source Code Pro", monospace;
+}
+
+.salome { font-family: "salomeitalic", serif; }
+
 .txtcen { text-align: center; }
-
-
-    @media screen and (min-width: 480px) {
-      h1, .h1 { font-size: 3rem; }
-      h2, .h2 { font-size: 1.75rem; }
-      p, ul, ol, .p { font-size: 1.25rem; }
-      small, .small { font-size: 1rem; }
-    }
-    
-    @media screen and (min-width: 640px) {
-      h1, .h1 { font-size: 4rem; }
-      h2, .h2 { font-size: 2rem; } 
-    }
-    
-    @media screen and (min-width: 1024px) {
-      h1, .h1 { font-size: 6rem; }
-      h2, .h2 { font-size: 3rem; }
-    }
+.txtri  { text-align: right; }
