@@ -370,12 +370,6 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
 
 /*
 
-        Variables
-
-
-*/
-/*
-
         Mathematical Type
 
 
@@ -397,8 +391,6 @@ h1, .h1 {
     h1, .h1 {
       font-size: 6rem; } }
 
-/* Use these classes to limit font sizes from enlarging at specific breakpoints
-*/
 .h1-s {
   font-size: 2rem; }
 
@@ -423,40 +415,20 @@ h2, .h2 {
   .h2-m {
     font-size: 2rem; } }
 
-/* Use these for more complex type scales
-h3, .h3 {}
-h4, .h4 {}
-h5, .h5 {}
-h6, .h6 {}
-*/
-/* Use this for simpler type scales
-*/
-h3,
-h4,
-h5,
-h6 {
+h3, h4, h5, h6 {
   font-size: 1.25rem; }
 
-p,
-ul,
-ol,
-.p {
+p, ul, ol, .p {
   font-size: 1.25rem; }
 
-small,
-.small,
-.sm {
+small, .small {
   font-size: .875rem;
   -webkit-text-size-adjust: 100%; }
   @media screen and (min-width: 640px) {
-    small,
-    .small,
-    .sm {
+    small, .small {
       font-size: 1rem; } }
 
-strong,
-.bold,
-.b {
+strong, .bold {
   font-weight: 700; }
 
 .reg {
@@ -472,9 +444,6 @@ strong,
 .mono {
   font-family: "Source Code Pro", monospace; }
 
-.salome {
-  font-family: "salomeitalic", serif; }
-
 .txtcen {
   text-align: center; }
 
@@ -487,182 +456,157 @@ strong,
 
 
 */
-/*
-
-mar
-mart
-marr
-marb
-marl
-
-mar
-martop
-marright
-marbot
-marleft
-
-mar-t
-mar-r
-mar-b
-mar-l
-
-
-
-
-*/
-/* Margins
-*/
-.m0, .mar0 {
+.m0 {
   margin: 0; }
 
-.mt0, .mar-top0 {
+.mt0 {
   margin-top: 0; }
 
-.mr0, .mar-right0 {
+.mr0 {
   margin-right: 0; }
 
-.mb0, .mar-bot0 {
+.mb0 {
   margin-bottom: 0; }
 
-.ml0, .mar-left0 {
+.ml0 {
   margin-left: 0; }
 
-.m, .mar {
+.m1 {
   margin: 1rem; }
 
-.mt, .mar-top {
+.mt1 {
   margin-top: 1rem; }
 
-.mr, .mar-right {
+.mr1 {
   margin-right: 1rem; }
 
-.mb, .mar-bot {
+.mb1 {
   margin-bottom: 1rem; }
 
-.ml, .mar-left {
+.ml1 {
   margin-left: 1rem; }
 
 @media screen and (min-width: 640px) {
-  .m, .mar {
+  .m1-res {
     margin: 2rem; }
 
-  .mt, .mar-top {
+  .mt1-res {
     margin-top: 2rem; }
 
-  .mr, .mar-right {
+  .mr1-res {
     margin-right: 2rem; }
 
-  .mb, .mar-bot {
+  .mb1-res {
     margin-bottom: 2rem; }
 
-  .ml, .mar-left {
+  .ml1-res {
     margin-left: 2rem; } }
-.m2, .mar2 {
+.m2 {
   margin: 2rem; }
 
-.mt2, .mar-top2 {
+.mt2 {
   margin-top: 2rem; }
 
-.mr2, .mar-right2 {
+.mr2 {
   margin-right: 2rem; }
 
-.mb2, .mar-bot2 {
+.mb2 {
   margin-bottom: 2rem; }
 
-.ml2, .mar-left2 {
+.ml2 {
   margin-left: 2rem; }
 
 @media screen and (min-width: 640px) {
-  .m2, .mar2 {
+  .m2-res {
     margin: 4rem; }
 
-  .mt2, .mar-top2 {
+  .mt2-res {
     margin-top: 4rem; }
 
-  .mr2, .mar-right2 {
+  .mr2-res {
     margin-right: 4rem; }
 
-  .mb2, .mar-bot2 {
+  .mb2-res {
     margin-bottom: 4rem; }
 
-  .ml2, .mar-left2 {
+  .ml2-res {
     margin-left: 4rem; } }
 /* Padding
 */
-.p0, .pad0 {
+.p0 {
   padding: 0; }
 
-.pt0, .pad-top0 {
+.pt0 {
   padding-top: 0; }
 
-.pr0, .pad-right0 {
+.pr0 {
   padding-right: 0; }
 
-.pb0, .pad-bot0 {
+.pb0 {
   padding-bottom: 0; }
 
-.pl0, .pad-left0 {
+.pl0 {
   padding-left: 0; }
 
-.p1, .pad {
+.p1 {
   padding: 1rem; }
 
-.pt, .pad-top {
+.pt1 {
   padding-top: 1rem; }
 
-.pr, .pad-right {
+.pr1 {
   padding-right: 1rem; }
 
-.pb, .pad-bot {
+.pb1 {
   padding-bottom: 1rem; }
 
-.pl, .pad-left {
+.pl1 {
   padding-left: 1rem; }
 
 @media screen and (min-width: 640px) {
-  .p1, .pad {
+  .p1-res {
     padding: 2rem; }
 
-  .pt, .pad-top {
+  .pt1-res {
     padding-top: 2rem; }
 
-  .pr, .pad-right {
+  .pr1-res {
     padding-right: 2rem; }
 
-  .pb, .pad-bot {
+  .pb1-res {
     padding-bottom: 2rem; }
 
-  .pl, .pad-left {
+  .pl1-res {
     padding-left: 2rem; } }
-.p2, .pad2 {
+.p2 {
   padding: 2rem; }
 
-.pt2, .pad-top2 {
+.pt2 {
   padding-top: 2rem; }
 
-.pr2, .pad-right2 {
+.pr2 {
   padding-right: 2rem; }
 
-.pb2, .pad-bot2 {
+.pb2 {
   padding-bottom: 2rem; }
 
-.pl2, .pad-left2 {
+.pl2 {
   padding-left: 2rem; }
 
 @media screen and (min-width: 640px) {
-  .p2, .pad2 {
+  .p2-res {
     padding: 4rem; }
 
-  .pt2, .pad-top2 {
+  .pt2-res {
     padding-top: 4rem; }
 
-  .pr2, .pad-right2 {
+  .pr2-res {
     padding-right: 4rem; }
 
-  .pb2, .pad-bot2 {
+  .pb2-res {
     padding-bottom: 4rem; }
 
-  .pl2, .pad-left2 {
+  .pl2-res {
     padding-left: 4rem; } }
 .tappad {
   line-height: 3rem; }
@@ -675,22 +619,21 @@ mar-l
 .borbox {
   box-sizing: border-box; }
 
-.db, .disblo {
+.db {
   display: block; }
 
-.dib, .disinblo {
+.dib {
   display: inline-block; }
 
-.fl,
-.floleft {
+.fl {
   float: left; }
 
-.fr,
-.floright {
+.fr {
   float: right; }
 
 .wrap {
-  margin: 0 auto; }
+  margin-right: auto;
+  margin-left: auto; }
 
 .posrel {
   position: relative; }
@@ -704,25 +647,21 @@ mar-l
 .right0 {
   right: 0; }
 
-.bot0 {
+.bottom0 {
   bottom: 0; }
 
 .left0 {
   left: 0; }
 
-.top,
 .top1 {
   top: 1rem; }
 
-.right,
 .right1 {
   right: 1rem; }
 
-.bot,
-.bot1 {
+.bottom1 {
   bottom: 1rem; }
 
-.left,
 .left1 {
   left: 1rem; }
 
@@ -732,7 +671,7 @@ mar-l
 .right2 {
   right: 2rem; }
 
-.bot2 {
+.bottom2 {
   bottom: 2rem; }
 
 .left2 {
@@ -871,7 +810,7 @@ mar-l
   max-width: 48rem; }
 
 .maxwi5 {
-  max-width: 56rem; }
+  max-width: 60rem; }
 
 .asp-sq {
   width: 100%;
@@ -938,43 +877,6 @@ mar-l
     width: 25%; } }
 /*
 
-        Grids
-        
-*/
-.g, .grid {
-  letter-spacing: -0.31em;
-  *letter-spacing: normal;
-  *word-spacing: -0.43em;
-  text-rendering: optimizespeed; }
-
-.opera-only :-o-prefocus,
-.g, .grid {
-  word-spacing: -0.43em; }
-
-.c, .col {
-  display: inline-block;
-  zoom: 1;
-  *display: inline;
-  letter-spacing: normal;
-  word-spacing: normal;
-  vertical-align: top;
-  text-rendering: auto; }
-
-.g-gut, .grid-gut {
-  margin-left: -2rem; }
-  .g-gut > .c, .g-gut > .col, .grid-gut > .c, .grid-gut > .col {
-    box-sizing: border-box;
-    padding-left: 2rem; }
-
-@media screen and (max-width: 639px) {
-  /*
-    .c-1o8, .c-1o4, .c-2o8, .c-3o8, .c-1o2, .c-2o4, .c-4o8, .c-5o8, .c-3o4, .c-6o8, .c-7o8,
-    .col-1o8, .col-1o4, .col-2o8, .col-3o8, .col-1o2, .col-2o4, .col-4o8, .col-5o8, .col-5o8, .col-3o4, .col-6o8, .col-7o8 {
-      width: 100%;
-    }
-  */ }
-/*
-
         Modules
 
 
@@ -1001,83 +903,6 @@ mar-l
 @media screen and (max-width: 639px) {
   .media-fold-s .img {
     float: none; } }
-
-/*
-
-        States
-
-
-*/
-.hov-zoom:hover {
-  zoom: 200%; }
-
-.hov-shift-up:hover {
-  -webkit-transform: translate(0, -4rem);
-  transform: translate(0, -4rem); }
-
-.tarshow {
-  display: none; }
-  .tarshow:target {
-    display: block; }
-
-.hov .hov-show {
-  display: none; }
-.hov:hover .hov-show {
-  display: block; }
-
-.hov-exp {
-  height: 0; }
-  .hov-exp:hover {
-    height: auto; }
-
-.hide {
-  display: none; }
-
-@media screen and (max-width: 639px) {
-  .hide-s {
-    display: none; }
-
-  .show-s {
-    display: block; } }
-@media screen and (min-width: 640px) {
-  .hide-m {
-    display: none; }
-
-  .show-m {
-    display: block; } }
-@media screen and (min-width: 1024px) {
-  .hide-l {
-    display: none; }
-
-  .show-l {
-    display: block; } }
-/*
-
-        Mathematical Animations
-
-
-*/
-.anim-speed-1 {
-  -webkit-transition-duration: .5s;
-  transition-duration: .5s; }
-
-.anim-speed-2 {
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s; }
-
-.anim-speed-3 {
-  -webkit-transition-duration: .1s;
-  transition-duration: .1s; }
-
-.anim-speed-4 {
-  -webkit-transition-duration: .05s;
-  transition-duration: .05s; }
-
-.trans-all {
-  -webkit-transition-property: all;
-  transition-property: all;
-  -webkit-transition-timing-function: linear;
-  transition-timing-function: linear; }
 
 /*
 
@@ -1170,10 +995,3 @@ a {
 .input:focus {
   outline: none;
   border-color: #00bbff; }
-
-/*
-
-        Mathematical Icons
-
-
-*/

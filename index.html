@@ -4,12 +4,9 @@
   <meta charset=utf-8 />
   <title>Mathematical – A Simple, Responsive Framework</title>
   <meta name="description" content="A Simple, Responsive Framework">
-  <link rel="icon" href="http://jxnblk.com/favicon.png" />
-  
   <link rel="stylesheet" href="style.css" />
-      
+  <link rel="icon" href="http://jxnblk.com/favicon.png" />
   <link rel="apple-touch-icon-precomposed" href="http://jxnblk.com/apple-touch-icon.png" />
-  
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   
   <!-- Put your own Typekit code here -->
@@ -19,35 +16,24 @@
 </head> 
  
 <body>
-<div class="wrap pad2 borbox">
+
+<div class="wrap p2 p2-res borbox maxwi5">
   
-  <header class="mb2">
+  <header class="mb2 mb2-res">
     <h1 class="h1 reg">Mathematical</h1>
-    <h2 class="h2 reg">A Simple Framework for Prototyping and Designing in the Browser Quickly</h2>
-    
-    <nav class="mt tappad">
-      <a href="#type" class="mr">Type</a>
-      <a href="#structure" class="mr">Structure</a>
-      <!-- <a href="#modules" class="mr">Modules</a> -->
-      <!-- <a href="#theming" class="mr">Theming</a> -->
-      <a href="#reference" class="mr">Reference</a>
-      <a href="#glossary" class="mr">Glossary</a>
-    </nav>
+    <h2 class="h2 reg">A Simple, Responsive Web Framework</h2>
   </header>
-  
-  <article class="mb2">
+
+  <!-- <article class="mb2">
     <p>Mathematical borrows from principles of OOCSS and promotes minimal styling to stay true to the medium.</p>
-  </article>
+  </article> -->
   
-  <article id="type" class="mb2">  
+  <article id="type" class="mb2 mb2-res">  
     
-    <h1 class="h2 mb">Type</h1>
-    <p class="mb maxwi4">The default type scale uses four font sizes, all based on simple math. Smaller screens use less type size contrast. Bigger screens get more dramatic contrast.</p>
-    <p class="mb maxwi4">If you think restricting yourself to four font sizes is difficult or not ideal for certain interfaces, it may just be that this feels a little unfamiliar. But a type scale like this can help achieve clarity, brevity, and simplicity. After all, it's all about information density, and scrolling is just a form of responsive disclosure.</p>
-    <p class="small mb2 maxwi4">Use this smaller size for helper text, form labels and meta content. Do you really need to go any smaller?</p>
+    <h1 class="h2 mb1">Type</h1>
+    <p class="mb1 mb1-res">The default type scale uses four font sizes, all based on simple math. Smaller screens use less type size contrast. Bigger screens get more dramatic contrast.</p>
  
-    <div class="bg-ltgry rc pad mb2">
-      <p class="strong">Default Type Scale:</p>
+    <div class="mb2 mb2-res">
       <h1 class="h1 reg">Algebraic (h1)</h1>
       <h2 class="h2 reg">Geometric (h2)</h2>
       <p>Trigonometric (p)</p>
@@ -56,30 +42,25 @@
 
   </article>
   
-  <article id="structure" class="mb2 overhide">  
+  <article id="structure" class="mb2 mb2-res">  
     <h1 class="h2">Structure</h1>
-    <p class="mb">HTML is inherently structured. Use CSS to enhance the experience.</p>
+    <p class="mb1 mb1-res">HTML is inherently structured. Use CSS to enhance the experience.</p>
     
-    <div class="grid grid-gut">
-      <div class="col wi50-m">
-        <h2 class="p bold caps">Spacing Utilities</h2>
-        <p class="mb">
-          Mathematical uses a suite of spacing utility classes to adjust margin and padding on elements. 
-          These utilities are helpful in creating gestalt and prevent unnecessarily editing CSS, 
-          which should help speed you up.
-        </p>
-      </div>
-      <div class="col wi50-m">
-        <h2 class="p bold caps">Positioning Utilities</h2>
-        <p class="mb">
-          The suite of positioning utilities are for when you want to change the document flow, make things overlap, lock chrome, etc.
-        </p>
-      </div>
-    </div>
+    <h2 class="p bold caps">Spacing Utilities</h2>
+    <p class="mb1 mb1-res">
+      Mathematical uses a suite of spacing utility classes to adjust margin and padding on elements. 
+      These utilities are helpful in creating gestalt and prevent unnecessarily editing CSS, 
+      which should help speed you up.
+    </p>
+
+    <h2 class="p bold caps">Positioning Utilities</h2>
+    <p class="mb1 mb1-res">
+      The suite of positioning utilities are for when you want to change the document flow, make things overlap, lock chrome, etc.
+    </p>
     
-    <h2 class="p bold caps mb">Media Object</h2>
+    <h2 class="p bold caps mb1">Media Object</h2>
     <div class="media media-fold-s mb2">
-      <div class="img sq6 mr mb bg-ltgry bor bor-mdgry rc pad"></div>
+      <div class="img sq6 mr1 mb1 mb1-res bg-ltgry bor bor-mdgry rc p1"></div>
       <div class="bd">
         <h3>Media Object</h3>
         <p>Media objects are super useful and extensible. (HT <a href="http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/">Nicole Sullivan</a>)</p>
@@ -87,405 +68,17 @@
       </div>
     </div>
     
-    <h2 class="p bold caps mb">Grids</h2>
-    
-    <div class="grid grid-gut mb2">
-      <div class="col wi37p5-m">
-        <div class="rc bg-ltgry borbox pad">
-          <h3 class="h2-m">3/8 column (37.5%)</h3>
-          <p>If you use a consistent spacing rhythm, most layouts don't need a grid, but sometimes they're useful.</p>
-        </div>
-      </div>
-      <div class="col wi62p5-m">
-        <div class="rc bg-ltgry borbox pad">
-          <h3 class="h2-m">5/8 column (67.5%)</h3>
-          
-          <p class="mb">They can also be nested</p>
-          <div class="grid grid-gut">
-            <div class="col wi50-m">
-              <div class="borbox pad bor bor-mdgry rc mb">
-                Nested
-              </div>
-            </div>
-            <div class="col wi50-m">
-              <div class="borbox pad bor bor-mdgry rc">
-                Columns
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> 
-      
-    </div>
-    
-    
-    <h2 class="p bold caps">Circles & Squares</h2>
-    <p class="mb">Illustrator & Photoshop have them. Why shouldn't your CSS framework?</p>
-
-    <div class="dib">    
-      <div class="sq5 dib bg-ltgry bor bor-mdgry mr mb txtcen">
-        Square
-      </div>
-      
-      <div class="sq5 dib bg-ltgry bor bor-mdgry rc mr mb txtcen">
-        Rounded
-      </div>
-      
-      <div class="sq5 circ dib bg-ltgry bor bor-mdgry mr mb txtcen">
-        Circle
-      </div>
-    </div>
-    
-    <div class="dib">
-      <div class="sq5 dib mr mb">
-        <div class="asp-4o3 borbox rc bg-ltgry bor bor-mdgry txtcen">
-          4:3
-        </div>
-      </div>
-      <div class="sq5 dib mr mb">
-        <div class="asp-16o9 borbox rc bg-ltgry bor bor-mdgry txtcen">  
-          16:9
-        </div>
-      </div>
-    </div>
-    
-  </article>
-  
-  <article id="base" class="mb2">
-    <h1 class="h2 mb">Base Elements & Forms</h1>
-    
-    <h2 class="p bold caps mb">Forms</h2>
-    
-    <form class="mb">
-      <fieldset class="fieldset bor-mdgry rc mb">
-        <legend class="">Math Legend</legend>
-        <!-- <label class="sm">Number</label> -->
-        <input class="input mr bor-mdgry" placeholder="Number" type="text">
-        <!-- <label class="sm">Polynomial</label> -->
-        <input class="input mr bor-mdgry" placeholder="Polynomial" type="text">
-        <input class="btn p btn-med btn-link" type="submit" value="Math It">
-      </fieldset>
-    </form>
-    
-    <form class="mb">
-
-      <legend class="p">Math Legend</legend>
-      <label class="db">Number</label>
-      <input class="input db bor-mdgry" type="text">
-      <label class="db">Polynomial</label>
-      <input class="input db bor-mdgry" type="text">
-      
-      <label class="db">More Numbers</label>
-      <select class="select db">
-        <option value="16">16</option>
-        <option value="32">32</option>
-        <option value="64">64</option>
-        <option value="128">128</option>
-      </select>
-      
-      <input class="btn p btn-med btn-link" type="submit" value="Math It">
-
-    </form>
-    
-  </article>
-  
-  
-  <article id="states" class="mb2">  
-    <h1 class="h2">States & Animations</h1>
-    <p>Working on it</p>
-  </article>
-  
-  
-  <article id="theming" class="mb2">
-    <h1 class="h2">Theming</h1>
-    <p>This is where you give it your own personality</p>
   </article>
 
+  <article class="mb2 mb2-res">
+    <p>More to come...</p>
+  </article>
+
+  <footer>
+    <p class="mdgry">Made with love by <a href="http://jxnblk.com">Jxnblk</a></p>
+  </footer>
 
 </div>
-
-
-  <article id="reference" class="pad2 tarshow borto bor-ltgry">
-    
-    <h1 class="h1-m reg">Reference</h1>
-    
-    <h2 class="p bold caps">Margins</h2>
-    <p class="mb">Based on spacing units. Default spacing is 1rem for small screens, 2rem for large screens. Edit spacing units to suit your own needs.</p>
-    
-    <div class="g g-gut">
-      
-      <div class="c c-1o2 mb2">
-        <h3>Responsive Margins</h3>
-        <dl class="mono bg-ltgry rc pad">
-          <dt class="bold">.m</dt>
-          <dd class="">margin: 1</dd>
-          <dt class="bold">.mt</dt>
-          <dd class="">margin-top: 1</dd>
-          <dt class="bold">.mr</dt>
-          <dd class="">margin-right: 1</dd>
-          <dt class="b">.mb</dt>
-          <dd class="">margin-bottom: 1</dd>
-          <dt class="b">.marleft</dt>
-          <dd class="">margin-left: 1</dd>
-        </dl>
-      </div>
-      
-      <div class="c c-1o2 mb2">
-        <h3>2x Responsive Margins</h3>
-        <dl class="mono bg-ltgry rc pad">
-          <dt class="bold">.m2</dt>
-          <dd class="">margin: 2</dd>
-          <dt class="bold">.mt2</dt>
-          <dd class="">margin-top: 2</dd>
-          <dt class="bold">.mr2</dt>
-          <dd class="">margin-right: 2</dd>
-          <dt class="b">.mb2</dt>
-          <dd class="">margin-bottom: 2</dd>
-          <dt class="b">.marleft2</dt>
-          <dd class="">margin-left: 2</dd>
-        </dl>
-      </div>
-      
-    </div>
-    
-    <div class="grid grid-gut">
-    
-      <div class="col wi50-m mb2">
-      
-      </div>
-    
-    
-      <div class="c c-1o2 mb2">
-        <h3>Classes to remove margins</h3>
-        <dl class="mono bg-ltgry rc pad">
-          <dt class="bold">.m0</dt>
-          <dd class="">margin: 0</dd>
-          <dt class="bold">.mt0</dt>
-          <dd class="">margin-top: 0</dd>
-          <dt class="bold">.mr0</dt>
-          <dd class="">margin-right: 0</dd>
-          <dt class="b">.mb0</dt>
-          <dd class="">margin-bottom: 0</dd>
-          <dt class="b">.marleft0</dt>
-          <dd class="">margin-left: 0</dd>
-        </dl>
-      </div>
-      
-    </div>
-    
-    
-    <h2 class="p bold caps">Padding</h2>
-    <p class="mb">Uses the same spacing units as margins.</p>
-    
-    <div class="g g-gut">
-      <div class="c c-1o2 mb2">
-        <h3>Responsive Padding</h3>
-        <dl class="mono pad bg-ltgry rc">
-          <dt class="bold">.pad</dt>
-          <dd>padding: 1</dd>
-          <dt class="bold">.padtop</dt>
-          <dd>padding-top: 1</dd>
-          <dt class="bold">.padright</dt>
-          <dd>padding-right: 1</dd>
-          <dt class="bold">.padbot</dt>
-          <dd>padding-bottom: 1</dd>
-          <dt class="bold">.padleft</dt>
-          <dd>padding-left: 1</dd>
-        </dl>
-      </div>
-      <div class="c c-1o2 mb2">
-        <p>Hopefully you see the pattern here. Padding classes use the same naming structure as margins. E.g. <span class="mono">.padbot2 .pad-s</span></p>
-      </div>
-    </div>
-    
-    
-    <h2 class="p bold caps">Generic Utility Classes</h2>
-    
-    <div class="g g-gut">
-      <div class="c c-1o2 mb">
-        <dl class="mono pad bg-ltgry rc">
-          <dt>.borbox</dt>
-          <dd>box-sizing: border-box</dd>
-          <dt>.disblo</dt>
-          <dd>display: block</dd>
-          <dt>.dib</dt>
-          <dd>display: inline-block</dd>
-          <dt>.floleft</dt>
-          <dd>float: left</dd>
-          <dt>.floright</dt>
-          <dd>float: right</dd>
-          <dt>.wrap</dt>
-          <dd>margin: 0 auto</dd>
-        </dl>
-      </div>
-      <div class="c c-1o2 mb">
-        <dl class="mono pad bg-ltgry rc">
-          <dt>.overhide</dt>
-          <dd>overflow: hidden</dd>
-          <dt>scroll-y</dt>
-          <dd>overflow-y: scroll</dd>
-        </dl>
-      </div>
-    </div>
-    
-    <h2 class="p bold caps">Positioning Utility Classes</h2>
-    <div class="g g-gut mb">
-      <div class="c c-1o2">
-        <dl class="mono pad bg-ltgry rc">
-          <dt>.posabs</dt>
-          <dd>position: absolute</dd>
-          <dt>.posrel</dt>
-          <dd>position: relative</dd>
-          <dt>.fill</dt>
-          <dd>top: 0
-            right: 0
-            bottom: 0
-            left: 0
-            margin: auto
-          </dd>
-          <dt>.top0</dt>
-          <dd>top: 0</dd>
-          <dt>.right0</dt>
-          <dd>right: 0</dd>
-          <dt>.bot0</dt>
-          <dd>bottom: 0</dd>
-          <dt>.left0</dt>
-          <dd>left: 0</dd>
-        </dl>
-      </div>
-      <div class="c c-1o2">
-        <dl class="mono pad bg-ltgry rc">
-          <dt>.top1</dt>
-          <dd>top: 1</dd>
-          <dt>.right1</dt>
-          <dd>right: 1</dd>
-          <dt>.bot1</dt>
-          <dd>bottom: 1</dd>
-          <dt>.left1</dt>
-          <dd>left: 1</dd>
-          
-          <dt>.z1</dt>
-          <dd>z-index: 1</dd>
-          <dt>.z2</dt>
-          <dd>z-index: 2</dd>
-          <dt>.z3</dt>
-          <dd>z-index: 3</dd>
-          <dt>.z4</dt>
-          <dd>z-index: 4</dd>
-          <dt>.z5</dt>
-          <dd>z-index: 5</dd>
-        </dl>
-      </div>
-    </div>
-    
-  </article>  
-
-
-  <article id="glossary" class="pad2 bg-ltgry tarshow">
-    
-    <h1 class="h1-m reg">Shorthand Glossary</h1>
-    <!-- <p class="marbo">The intent of codifying class names is to keep line lengths short when using the multiclass pattern, while still maintaining readability. There is the added benefit of being able to type class names faster, once you've learned them.</p> -->
-    <p class="mb">Mathematical's codified class names are intended to keep HTML short, scannable and fairly obvious.</p>
-    
-    <dl class="mono mb">
-      <dt>sm</dt>
-      <dd>small</dd>
-      <dt>b</dt>
-      <dd>bold</dd>
-      <dt>i</dt>
-      <dd>italic</dd>
-      <dt>lh</dt>
-      <dd>line-height</dd>
-    </dl>
-    
-    <dl class="mono mb">  
-      <dt>xs</dt>
-      <dd>extra small (device-width)</dd>
-      <dt>s</dt>
-      <dd>small</dd>
-      <dt>m</dt>
-      <dd>medium</dd>
-      <dt>l</dt>
-      <dd>large</dd>
-      <dt>xl</dt>
-      <dd>extra large</dd>
-    </dl>
-    
-    <dl class="mono mb">  
-      <dt>g</dt>
-      <dd>grid</dd>
-      <dt>c</dt>
-      <dd>column or cell</dd>
-      <dt>XoY</dt>
-      <dd>X of Y or X/Y</dd>
-      <dt>gut</dt>
-      <dd>gutter</dd>
-    </dl>
-      
-    <dl class="mono mb">
-      <dt>top</dt>
-      <dd>top</dd>
-      <dt>right</dt>
-      <dd>right</dd>
-      <dt>bot</dt>
-      <dd>bottom</dd>
-      <dt>left</dt>
-      <dd>left</dd>
-      <dt>cen</dt>
-      <dd>center</dd>
-      <dt>mid</dt>
-      <dd>middle</dd>
-    </dl>
-      
-    <dl class="mono mb">
-      <dt>wi</dt>
-      <dd>width</dd>
-      <dt>hi</dt>
-      <dd>height</dd>
-      <dt>sq</dt>
-      <dd>square</dd>
-    </dl>
-      
-    <dl class="mono mb">
-      <dt>pad</dt>
-      <dd>padding</dd>
-      <dt>m</dt>
-      <dd>margin</dd>
-    </dl>
-      
-    <dl class="mono mb">
-      <dt>dis</dt>
-      <dd>display</dd>
-      <dt>flo</dt>
-      <dd>float</dd>
-      
-      <dt>pos</dt>
-      <dd>position</dd>
-      <dt>abs</dt>
-      <dd>absolute</dd>
-      <dt>rel</dt>
-      <dd>relative</dd>
-      <dt>z</dt>
-      <dd>z-index</dd>
-    </dl>
-      
-    <dl class="mono mb">
-      <dt>bor</dt>
-      <dd>border</dd>
-      <dt>rc</dt>
-      <dd>rounded corners</dd>
-      
-      <dt>btn</dt>
-      <dd>button</dd>
-      <dt>bd</dt>
-      <dd>body</dd>
-
-      <dt>hov</dt>
-      <dd>hover</dd>
-    </dl>
-  
-  </article>
-
 
 </body>
 </html>

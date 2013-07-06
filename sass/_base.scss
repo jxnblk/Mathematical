@@ -39,3 +39,18 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
   margin-bottom: 1rem;
   padding: .5rem;
 }
+
+
+// Width Media Queries
+
+@mixin break($point) {
+  @if $point == small {
+    @media screen and (max-width: 639px) { @content; }
+  }
+  @else if $point == medium {
+    @media screen and (min-width: 640px) { @content; }
+  }
+  @else if $point == large {
+    @media screen and (min-width: 1024px)  { @content; }
+  }
+}

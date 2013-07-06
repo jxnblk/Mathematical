@@ -23,8 +23,7 @@ h1, .h1 {
     font-size: 6rem;
   }
 }
-  /* Use these classes to limit font sizes from enlarging at specific breakpoints
-  */
+  // Use these classes to limit font sizes from enlarging at specific breakpoints
   .h1-s {
     font-size: 2rem;
   }
@@ -54,33 +53,17 @@ h2, .h2 {
   }
 
 
-    /* Use these for more complex type scales
-    h3, .h3 {}
-    h4, .h4 {}
-    h5, .h5 {}
-    h6, .h6 {}
-    */
+// Use this for simpler type scales
 
-/* Use this for simpler type scales
-*/
-h3,
-h4,
-h5,
-h6 {
+h3, h4, h5, h6 {
   font-size: 1.25rem; // Used to be 1.125rem for xsmall
 }
 
-p,
-ul,
-ol,
-.p {
+p, ul, ol, .p {
   font-size: 1.25rem; // Used to be 1.125rem for xsmall
-  //font-weight: 400;
 }
 
-small,
-.small,
-.sm {
+small, .small {
   font-size: .875rem;
   -webkit-text-size-adjust: 100%;
   @include break(medium) {
@@ -88,9 +71,7 @@ small,
   }
 }
 
-strong,
-.bold,
-.b {
+strong, .bold {
   font-weight: 700;
 }
 .reg {
@@ -105,11 +86,9 @@ strong,
   letter-spacing: .2em;
 }
 
-.mono {
-  font-family: "Source Code Pro", monospace;
-}
+.mono { font-family: "Source Code Pro", monospace; }
 
-.salome { font-family: "salomeitalic", serif; }
+//.salome { font-family: "salomeitalic", serif; }
 
 .txtcen { text-align: center; }
 .txtri  { text-align: right; }
