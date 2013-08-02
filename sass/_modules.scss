@@ -1,11 +1,9 @@
-/*
+/* ==========================================================================
 
-        Modules
+   MODULES
 
-
-*/
-
-
+   ========================================================================== */
+   
 .btn {
   display: inline-block;
   overflow: hidden;
@@ -21,17 +19,68 @@
   padding: 0 16px;
 }
 
-// Media
-.media {
-  overflow: hidden;
-  .img {
-    float: left;
-  }
-  .bd {
-    overflow: hidden;
-  }
+/* ==========================================================================
+   MEDIA OBJECT 
+   
+   @author: Nicole Sullivan
+   @ref: http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/
+   ========================================================================== */
+   
+.media, .bd {overflow:hidden; _overflow:visible; zoom:1;}
+.media .img {float:left;}
+.media .img img{display:block;}
+.media .imgExt{float:right;}
+
+
+/* ==========================================================================
+   FLAG OBJECT
+
+   @author: Harry Roberts   
+   @ref: http://csswizardry.com/2013/05/the-flag-object/
+   ========================================================================== */
+
+.flag {
+    display: table;
+    width: 100%;
 }
+
+.flag__image,
+.flag__body {
+    display: table-cell;
+    vertical-align: middle;
+
+    .flag--top & {
+        vertical-align: top;
+    }
+
+    .flag--bottom & {
+        vertical-align: bottom;
+    }
+
+}
+
+.flag__image {
+    padding-right: 10px;
+
+    > img {
+        display: block;
+        max-width: none;
+    }
+
+    .flag--rev & {
+        padding-right: 0;
+        padding-left: 10px;
+    }
+
+}
+
+.flag__body {
+    width: 100%;
+}
+
+   
 // Extension to stack media object at small sizes
+// TODO: Review
 .media-fold-s {
   @include break(small) {
     & .img {

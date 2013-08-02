@@ -1,0 +1,19 @@
+/* ==========================================================================
+   BORDERS
+   ========================================================================== */
+
+.bor   { border:        1px solid; }
+.borto { border-top:    1px solid; }
+.borri { border-right:  1px solid; }
+.borbo { border-bottom: 1px solid; }
+.borle { border-left:   1px solid; }
+
+.bor-dkgry { border-color: $dkgry; }
+.bor-mdgry { border-color: $mdgry; }
+.bor-ltgry { border-color: $ltgry; }
+.bor-wht {   border-color: #fff; }
+
+
+.rc {   border-radius: .25rem; }
+.circ { border-radius: 50%; }
+   
