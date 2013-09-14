@@ -1,14 +1,15 @@
-/*
+// Modules
 
-        Modules
-
-
-*/
-
+// Buttons
 
 .btn {
   display: inline-block;
   overflow: hidden;
+}
+
+.btn-small {
+  line-height: 32px;
+  padding: 0 12px;
 }
 
 .btn-med {
@@ -21,6 +22,7 @@
   padding: 0 16px;
 }
 
+
 // Media
 .media {
   overflow: hidden;
@@ -30,12 +32,4 @@
   .bd {
     overflow: hidden;
   }
-}
-// Extension to stack media object at small sizes
-.media-fold-s {
-  @include break(small) {
-    & .img {
-      float: none;
-    }
-  }  
 }
