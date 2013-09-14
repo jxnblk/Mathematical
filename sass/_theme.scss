@@ -1,68 +1,67 @@
-/*
-
-        Mathematical Theme
+// Mathematical Theme
 
 
-*/
+// Mathematical Colors
+$dark-gray: #444;
+$mid-gray: #999;
+$light-gray: #eee;
+$blue:  #0bf;
 
-$dkgry: #444;
-$mdgry: #999;
-$ltgry: #eee;
-$link:  #0bf;
-
-
-
+// Base Elements
 body {
-  color: $dkgry;
+  color: $dark-gray;
   background-color: #fff;
   font-family: "skolar", Georgia, serif;
 }
 
-
 a {
-  color: $link;
+  color: $blue;
   text-decoration: none;
   &:hover {
-    color: darken($link, 10%);
+    color: darken($blue, 10%);
   }
 }
 
-.dkgry { color: $dkgry; }
-.mdgry { color: $mdgry; }
-.ltgry { color: $ltgry; }
-.wht {   color: #fff; }
-.link {  color: $link; }
+// Color Classes
+.dark-gray  { color: $dark-gray; }
+.mid-gray   { color: $mid-gray; }
+.light-gray { color: $light-gray; }
+.white      { color: #fff; }
+.blue       { color: $blue; }
 
-.bg-dkgry { background-color: $dkgry; }
-.bg-mdgry { background-color: $mdgry; }
-.bg-ltgry { background-color: $ltgry; }
-.bg-link {  background-color: $link; }
-
-
-.bor   { border:        1px solid; }
-.borto { border-top:    1px solid; }
-.borri { border-right:  1px solid; }
-.borbo { border-bottom: 1px solid; }
-.borle { border-left:   1px solid; }
-
-.bor-dkgry { border-color: $dkgry; }
-.bor-mdgry { border-color: $mdgry; }
-.bor-ltgry { border-color: $ltgry; }
-.bor-wht {   border-color: #fff; }
+.bg-dark-gray  { background-color: $dark-gray; }
+.bg-mid-gray   { background-color: $mid-gray; }
+.bg-light-gray { background-color: $light-gray; }
+.bg-blue       {  background-color: $blue; }
 
 
-.rc {   border-radius: .25rem; }
-.circ { border-radius: 50%; }
+// Borders
+.border        { border:        1px solid; }
+.border-top    { border-top:    1px solid; }
+.border-right  { border-right:  1px solid; }
+.border-bottom { border-bottom: 1px solid; }
+.border-left   { border-left:   1px solid; }
+
+.border-dark-gray  { border-color: $dark-gray; }
+.border-mid-gray   { border-color: $mid-gray; }
+.border-light-gray { border-color: $light-gray; }
+.border-white      { border-color: #fff; }
 
 
-.btn-link {
+// Border Radii
+.round  { border-radius: .25rem; }
+.circle { border-radius: 50%; }
+
+
+// Buttons
+.btn-blue {
   color: #fff;
-  background-color: $link;
+  background-color: $blue;
   border-radius: .25rem;
   border: none;
   &:hover {
     color: #fff;
-    background-color: lighten($link, 5%);
+    background-color: lighten($blue, 5%);
   }
   &:active {
     box-shadow: inset 0 2px 4px rgba(0,0,0,.2);
@@ -70,9 +69,6 @@ a {
 }
 
 .input:focus {
-//  appearance: none;
   outline: none;
-  border-color: $link;
-  //outline-color: lighten($link, 20%); 
-  //outline-width: 4px;
+  border-color: $blue;
 }
