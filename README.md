@@ -1,3 +1,3 @@
 # Mathematical
 
-A simple, responsive web framework. Working on it.
+A simple CSS framework. Working on it.
