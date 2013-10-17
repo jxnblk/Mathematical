@@ -1,11 +1,6 @@
 // Base
 
 
-h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
-  // margin: 0;
-  // padding: 0;
-}
-
 .fieldset {
   margin: 0;
   padding: 1rem;
@@ -31,7 +26,7 @@ h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
 
 
 // Width Media Queries
-
+// Ditch this
 @mixin break($point) {
   @if $point == small {
     @media screen and (max-width: 639px) { @content; }
