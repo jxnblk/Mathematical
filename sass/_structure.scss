@@ -11,87 +11,46 @@
 .mb1 { margin-bottom: 1rem; }
 .ml1 { margin-left:   1rem; }
 
-@include break(medium) {
-  .m1-responsive  { margin:        2rem; }
-  .mt1-responsive { margin-top:    2rem; }
-  .mr1-responsive { margin-right:  2rem; }
-  .mb1-responsive { margin-bottom: 2rem; }
-  .ml1-responsive { margin-left:   2rem; } 
-}
-
 .m2  { margin:        2rem; }
 .mt2 { margin-top:    2rem; }
 .mr2 { margin-right:  2rem; }
 .mb2 { margin-bottom: 2rem; }
 .ml2 { margin-left:   2rem; }
 
-@include break(medium) {
-  .m2-responsive  { margin:        4rem; }
-  .mt2-responsive { margin-top:    4rem; }
-  .mr2-responsive { margin-right:  4rem; }
-  .mb2-responsive { margin-bottom: 4rem; }
-  .ml2-responsive { margin-left:   4rem; }
-}
-
 
 // Padding
 
 .no-padding  { padding: 0; }
 
-.pad        { padding:        1rem; }
-.pad-top    { padding-top:    1rem; }
-.pad-right  { padding-right:  1rem; }
-.pad-bottom { padding-bottom: 1rem; }
-.pad-left   { padding-left:   1rem; }
-.pad-x {
+.pad, .p1 { padding: 1rem; }
+.px1 {
   padding-right: 1rem;
   padding-left: 1rem;
 }
-.pad-y {
+.py1 {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
 
-@include break(medium) {
-  .pad-responsive        { padding:        2rem; }
-  .pad-top-responsive    { padding-top:    2rem; }
-  .pad-right-responsive  { padding-right:  2rem; }
-  .pad-bottom-responsive { padding-bottom: 2rem; }
-  .pad-left-responsive   { padding-left:   2rem; }
-  .pad-x-responsive {
-    padding-right: 2rem;
-    padding-left: 2rem;
-  }
-  .pad-y-responsive {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-  }
-}
-
-.pad-2  { padding:        2rem; }
-.pad-x-2 {
+.p2  { padding: 2rem; }
+.px2 {
   padding-right: 2rem;
   padding-left: 2rem;
 }
-.pad-y-2 {
+.py2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-// Generic tappable padding (for links, etc.)
+// Generic tappable padding (for links and other inline elements)
 .tap-pad {
   line-height: 3rem;
 }
 
-// Mobile style full-width list item
-.tap-pad-block {
-  display: block;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  line-height: 3rem;
-}
 
+// For fans of IE
 .border-box { box-sizing: border-box; }
+
 
 // Display
 .inline { display: inline; }
@@ -100,22 +59,25 @@
 
 .clearfix { overflow: hidden; }
 
-.float-left { float: left; }
-.float-right { float: right; }
+.left { float: left; }
+.right { float: right; }
 
 .wrap {
   margin-right: auto;
   margin-left: auto;
 }
 
+
+// Positioning utilities
+
 .relative { position: relative; }
 .absolute { position: absolute; }
 .fixed    { position: fixed; }
 
-.top    { top:    0; }
-.right  { right:  0; }
-.bottom { bottom: 0; }
-.left   { left:   0; }
+.top-0    { top:    0; }
+.right-0  { right:  0; }
+.bottom-0 { bottom: 0; }
+.left-0   { left:   0; }
 
 .absolute-center {
   position: absolute;
@@ -126,23 +88,11 @@
   margin: auto;
 }
 
-.z1 { z-index: 1; }
-.z2 { z-index: 2; }
-.z3 { z-index: 3; }
-.z4 { z-index: 4; }
-
-.scroll-y {
+.scrollable {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
-// Squares
-.square-1 { width:  1rem; height:  1rem; } //  16px
-.square-2 { width:  2rem; height:  2rem; } //  32px
-.square-3 { width:  3rem; height:  3rem; } //  48px
-.square-4 { width:  4rem; height:  4rem; } //  64px
-.square-6 { width:  6rem; height:  6rem; } //  96px
-.square-8 { width:  8rem; height:  8rem; } // 128px
 
 // Max-widths to use for controlling typographic measure
 .measure-1 { max-width: 24rem; } // 384px
@@ -172,6 +122,7 @@
   padding-bottom: 56.25%;
 }
 
-// Widths
+
+// Widths (Nestable)
 .full-width  { width: 100%;   }
 .half-width   { width:  50%;   }

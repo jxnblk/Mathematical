@@ -2,55 +2,31 @@
 
 
 body {
-  font-size: 100%;
+  //font-size: 100%;
   line-height: 1.5;
   font-weight: 400;
 }
 
-// Mobile-first font sizes
+
+// Simple Type Scale
+
 h1, .h1 {
-  font-size: 2rem;
+  font-size: 3em;
   line-height: 1.25;
-}
-.h1-responsive {
-  @include break(medium) {
-    font-size: 4rem;
-  }
-  @include break(large) {
-    font-size: 6rem;
-  }
 }
 
 h2, .h2 {
-  font-size: 1.25rem;
+  font-size: 2em;
   line-height: 1.25;
 }
-.h2-responsive {
-  @include break(medium) {
-    font-size: 2rem;
-  }
-  @include break(large) {
-    font-size: 3rem;
-  }
-}
 
-// Simpler Type Scale
-h3, h4, h5, h6 {
-  font-size: 1.25rem;
-}
-
-p, ul, ol, .p {
-  font-size: 1.25rem;
+h3, h4, h5, h6, ul, ol, p, .p {
+  font-size: 1.25em;
 }
 
 small, .small {
-  font-size: .875rem;
+  font-size: .875em;
   -webkit-text-size-adjust: 100%;
-}
-.small-responsive {
-  @include break(medium) {
-    font-size: 1rem;
-  }
 }
 
 strong, .bold {
