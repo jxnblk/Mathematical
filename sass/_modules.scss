@@ -3,19 +3,18 @@
 
 // Buttons
 
-.btn {
-  display: inline-block;
-  overflow: hidden;
+.button {
+  @extend .inline-block;
 }
-.btn-small {
+.button-small {
   line-height: 32px;
   padding: 0 12px;
 }
-.btn-med {
+.button-med {
   line-height: 48px;
   padding: 0 16px;
 }
-.btn-big {
+.button-big {
   line-height: 64px;
   padding: 0 16px;
 }
@@ -24,11 +23,14 @@
 // Media Object
 
 .media,
-.bd {
-  overflow: hidden;
+.body {
+  @extend .clearfix;
 }
 .img {
-  float: left;
+  @extend .left;
+}
+.img-right {
+  @extend .right;
 }
 
 

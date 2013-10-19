@@ -7,26 +7,7 @@ $mid-gray: #999;
 $light-gray: #eee;
 $blue:  #0bf;
 
-
-// Base Elements
-
-body {
-  color: $dark-gray;
-  background-color: #fff;
-  font-family: "skolar", Georgia, serif;
-}
-
-a {
-  color: $blue;
-  text-decoration: none;
-  &:hover {
-    color: darken($blue, 10%);
-  }
-}
-
-
 // Colors
-
 .dark-gray  { color: $dark-gray; }
 .mid-gray   { color: $mid-gray; }
 .light-gray { color: $light-gray; }
@@ -38,9 +19,21 @@ a {
 .bg-light-gray { background-color: $light-gray; }
 .bg-blue       {  background-color: $blue; }
 
+// Base Elements
+body {
+  @extend .dark-gray;
+  background-color: #fff;
+}
+
+a {
+  @extend .blue;
+  text-decoration: none;
+  &:hover {
+    color: darken($blue, 10%);
+  }
+}
 
 // Borders
-
 .border        { border:        1px solid; }
 .border-top    { border-top:    1px solid; }
 .border-right  { border-right:  1px solid; }
@@ -52,18 +45,14 @@ a {
 .border-light-gray { border-color: $light-gray; }
 .border-white      { border-color: #fff; }
 
-
 // Border Radii
-.round  { border-radius: .25rem; }
+.rounded  { border-radius: $space/4; }
 .circle { border-radius: 50%; }
 
-
 // Buttons
-
 .btn-blue {
+  @extend .rounded, .bg-blue;
   color: #fff;
-  background-color: $blue;
-  border-radius: .25rem;
   border: none;
   &:hover {
     color: #fff;
@@ -74,9 +63,7 @@ a {
   }
 }
 
-
 // Forms
-
 .input:focus {
   outline: none;
   border-color: $blue;

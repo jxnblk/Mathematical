@@ -1,32 +1,46 @@
 // Mathematical Type
 
+$font-primary: "skolar", Georgia, serif;
+$font-monospace: "Source Code Pro", monospace;
 
 body {
-  //font-size: 100%;
+  font-family: $font-primary;
   line-height: 1.5;
   font-weight: 400;
 }
 
-
-// Simple Type Scale
-
 h1, .h1 {
-  font-size: 3em;
+  font-size: 2rem;
   line-height: 1.25;
 }
 
 h2, .h2 {
-  font-size: 2em;
+  font-size: 1.5rem;
   line-height: 1.25;
 }
 
-h3, h4, h5, h6, ul, ol, p, .p {
-  font-size: 1.25em;
+h3, h4, h5, h6, dl, ol, ul, p, .p {
+  font-size: 1.125em;
 }
 
 small, .small {
   font-size: .875em;
-  -webkit-text-size-adjust: 100%;
+  //-webkit-text-size-adjust: 100%;
+}
+
+// Device-width based responsive type scale
+// Apply the .responsive class directly to elements or their parents
+.responsive {
+  @media (min-width: 768px) {
+    .h1, &.h1 { font-size: 4rem; }
+    .h2, &.h2 { font-size: 2rem; }
+    .p, &.p { font-size: 1.25rem; }
+    .small, &.small { font-size: 1rem; }
+  }
+  @media (min-width: 1024px) {
+    .h1, &.h1 { font-size: 6rem; }
+    .h2, &.h2 { font-size: 3rem; }
+  }
 }
 
 strong, .bold {
@@ -44,7 +58,7 @@ strong, .bold {
   letter-spacing: .2em;
 }
 
-.mono { font-family: "Source Code Pro", monospace; }
+.mono { font-family: $font-monospace; }
 
 .text-center { text-align: center; }
 .text-right  { text-align: right; }

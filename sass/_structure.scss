@@ -1,63 +1,79 @@
 // Structure
 
+$space: 1rem;
 
 // Margins
-
-.no-margin  { margin: 0; }
-
-.m1  { margin:        1rem; }
-.mt1 { margin-top:    1rem; }
-.mr1 { margin-right:  1rem; }
-.mb1 { margin-bottom: 1rem; }
-.ml1 { margin-left:   1rem; }
-
-.m2  { margin:        2rem; }
-.mt2 { margin-top:    2rem; }
-.mr2 { margin-right:  2rem; }
-.mb2 { margin-bottom: 2rem; }
-.ml2 { margin-left:   2rem; }
+@mixin margins {
+  $directions: (t -top, r -right, b -bottom, l -left);
+  $max: 4;
+  @for $i from 1 through $max {
+    .m#{$i} { margin: $space * $i }
+    @each $direction in $directions {
+      $short: nth($direction, 1);
+      $suffixes: nth($direction, 2);
+      @if (length($direction) == 3) {
+        $suffixes: (nth($direction, 2) nth($direction, 3));
+      }
+      .m#{$short}#{$i} {
+        @each $suffix in $suffixes {
+          margin#{$suffix}: $space * $i;
+        }
+      }
+    }
+  }
+}
+@include margins;
 
 
 // Padding
-
-.no-padding  { padding: 0; }
-
-.pad, .p1 { padding: 1rem; }
-.px1 {
-  padding-right: 1rem;
-  padding-left: 1rem;
+@mixin padding {
+  $directions: (x -right -left, y -top -bottom);
+  $max: 4;
+  @for $i from 1 through $max {
+    .p#{$i} { padding: $space * $i }
+    @each $direction in $directions {
+      $short: nth($direction, 1);
+      $suffixes: nth($direction, 2);
+      @if (length($direction) == 3) {
+        $suffixes: (nth($direction, 2) nth($direction, 3));
+      }
+      .p#{$short}#{$i} {
+        @each $suffix in $suffixes {
+          padding#{$suffix}: $space * $i;
+        }
+      }
+    }  
+  }
 }
-.py1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-}
-
-.p2  { padding: 2rem; }
-.px2 {
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-.py2 {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+@include padding;
 
 // Generic tappable padding (for links and other inline elements)
-.tap-pad {
-  line-height: 3rem;
-}
-
+.tap-pad { line-height: 3rem; min-height: 3rem; }
 
 // For fans of IE
 .border-box { box-sizing: border-box; }
-
 
 // Display
 .inline { display: inline; }
 .block  { display: block; }
 .inline-block { display: inline-block; }
+.table { display: table; }
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
 
-.clearfix { overflow: hidden; }
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+  }
+  &:after {
+      clear: both;
+  }
+  *zoom: 1;
+}
 
 .left { float: left; }
 .right { float: right; }
@@ -66,7 +82,7 @@
   margin-right: auto;
   margin-left: auto;
 }
-
+.fit { max-width: 100%; }
 
 // Positioning utilities
 
@@ -80,11 +96,7 @@
 .left-0   { left:   0; }
 
 .absolute-center {
-  @extend .absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  @extend .absolute, .top-0, .right-0, .bottom-0, .left-0;
   margin: auto;
 }
 
