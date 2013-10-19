@@ -1,7 +1,6 @@
 // Mathematical Type
 
 $font-primary: "skolar", Georgia, serif;
-$font-monospace: "Source Code Pro", monospace;
 
 body {
   font-family: $font-primary;
@@ -23,14 +22,13 @@ h3, h4, h5, h6, dl, ol, ul, p, .p {
   font-size: 1.125em;
 }
 
-small, .small {
+small, .sm {
   font-size: .875em;
-  //-webkit-text-size-adjust: 100%;
 }
 
 // Device-width based responsive type scale
 // Apply the .responsive class directly to elements or their parents
-.responsive {
+.res {
   @media (min-width: 768px) {
     .h1, &.h1 { font-size: 4rem; }
     .h2, &.h2 { font-size: 2rem; }
@@ -43,22 +41,10 @@ small, .small {
   }
 }
 
-strong, .bold {
-  font-weight: 700;
-}
-.regular {
-  font-weight: normal;
-}
-.italic {
-  font-style: italic;
-}
+strong, .bold { font-weight: 700; }
+.reg { font-weight: normal; }
 
-.caps { 
-  text-transform: uppercase;
-  letter-spacing: .2em;
-}
+.caps { text-transform: uppercase; letter-spacing: .2em; }
 
-.mono { font-family: $font-monospace; }
-
-.text-center { text-align: center; }
-.text-right  { text-align: right; }
+.center { text-align: center; }
+.right-align  { text-align: right; }

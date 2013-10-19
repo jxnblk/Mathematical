@@ -24,7 +24,6 @@ $space: 1rem;
 }
 @include margins;
 
-
 // Padding
 @mixin padding {
   $directions: (x -right -left, y -top -bottom);
@@ -50,20 +49,17 @@ $space: 1rem;
 // Generic tappable padding (for links and other inline elements)
 .tap-pad { line-height: 3rem; min-height: 3rem; }
 
-// For fans of IE
-.border-box { box-sizing: border-box; }
-
 // Display
-.inline { display: inline; }
-.block  { display: block; }
-.inline-block { display: inline-block; }
-.table { display: table; }
-.table-cell {
+.di { display: inline; }
+.db  { display: block; }
+.dib { display: inline-block; }
+.dt { display: table; }
+.dtc {
   display: table-cell;
   vertical-align: middle;
 }
 
-.clearfix {
+.cf {
   &:before,
   &:after {
     content: " ";
@@ -75,39 +71,14 @@ $space: 1rem;
   *zoom: 1;
 }
 
-.left { float: left; }
-.right { float: right; }
+.fl { float: left; }
+.fr { float: right; }
 
-.wrap {
+.mxa {
   margin-right: auto;
   margin-left: auto;
 }
 .fit { max-width: 100%; }
 
-// Positioning utilities
-
-.relative { position: relative; }
-.absolute { position: absolute; }
-.fixed    { position: fixed; }
-
-.top-0    { top:    0; }
-.right-0  { right:  0; }
-.bottom-0 { bottom: 0; }
-.left-0   { left:   0; }
-
-.absolute-center {
-  @extend .absolute, .top-0, .right-0, .bottom-0, .left-0;
-  margin: auto;
-}
-
-.scrollable {
-  overflow-y: scroll;
-  -webkit-overflow-scrolling: touch;
-}
-
 // Max-width used to control typographic measure
-.measure { max-width: 40rem; } // 640px
-
-// Widths (Nestable)
-.full-width  { width: 100%;   }
-.half-width   { width:  50%;   }
+.mw40 { max-width: 40rem; } // 640px

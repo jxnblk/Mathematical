@@ -1,27 +1,6 @@
 // Base
 
-
-.list {
+.ul {
   list-style: none;
   padding-left: 0;
-}
-
-.fieldset {
-  // Adjust the reset for this
-  margin: 0;
-  @extend .p1;
-}
-
-.input {
-  @extend .mb1, .p, .fit, .rounded;
-  padding: .75rem 1rem;
-  border: 1px solid;
-  &::-webkit-input-placeholder {
-    line-height: 1.5rem;
-  }
-}
-
-.select {
-  @extend .mb1;
-  padding: .5rem;
 }

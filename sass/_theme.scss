@@ -18,13 +18,8 @@ $blue:  #0bf;
 .bg-dark-gray  { background-color: $dark-gray; }
 .bg-mid-gray   { background-color: $mid-gray; }
 .bg-light-gray { background-color: $light-gray; }
+.bg-white      { background-color: #fff; }
 .bg-blue       {  background-color: $blue; }
-
-// Base Elements
-body {
-  @extend .dark-gray;
-  background-color: #fff;
-}
 
 a {
   @extend .blue;
@@ -34,20 +29,8 @@ a {
   }
 }
 
-// Borders
-.border        { border:        1px solid; }
-.border-top    { border-top:    1px solid; }
-.border-right  { border-right:  1px solid; }
-.border-bottom { border-bottom: 1px solid; }
-.border-left   { border-left:   1px solid; }
-
-.border-dark-gray  { border-color: $dark-gray; }
-.border-mid-gray   { border-color: $mid-gray; }
-.border-light-gray { border-color: $light-gray; }
-.border-white      { border-color: #fff; }
-
 // Border Radii
-.rounded  { border-radius: $space/4; }
+.rc  { border-radius: $space/4; }
 .circle { border-radius: 50%; }
 
 // Buttons
@@ -62,10 +45,4 @@ a {
   &:active {
     box-shadow: inset 0 2px 4px rgba(0,0,0,.2);
   }
-}
-
-// Forms
-.input:focus {
-  outline: none;
-  border-color: $blue;
 }
