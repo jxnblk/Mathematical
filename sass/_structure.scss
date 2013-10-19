@@ -66,9 +66,8 @@ $space: 1rem;
     display: table;
   }
   &:after {
-      clear: both;
+    clear: both;
   }
-  *zoom: 1;
 }
 
 .fl { float: left; }

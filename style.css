@@ -185,13 +185,11 @@ strong, .bold {
   display: table-cell;
   vertical-align: middle; }
 
-.cf {
-  *zoom: 1; }
-  .cf:before, .cf:after {
-    content: " ";
-    display: table; }
-  .cf:after {
-    clear: both; }
+.cf:before, .cf:after {
+  content: " ";
+  display: table; }
+.cf:after {
+  clear: both; }
 
 .fl {
   float: left; }
