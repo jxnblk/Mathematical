@@ -80,7 +80,7 @@
 .left-0   { left:   0; }
 
 .absolute-center {
-  position: absolute;
+  @extend .absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -93,35 +93,8 @@
   -webkit-overflow-scrolling: touch;
 }
 
-
-// Max-widths to use for controlling typographic measure
-.measure-1 { max-width: 24rem; } // 384px
-.measure-2 { max-width: 32rem; } // 512px
-.measure-3 { max-width: 40rem; } // 640px
-.measure-4 { max-width: 48rem; } // 768px
-.measure-5 { max-width: 60rem; } // 960px
-
-
-// Aspect ratio classes are useful for things like fluid-width background images
-// These fill the width of parent elements
-.aspect-square {
-  width: 100%;
-  height: 0;
-  padding-bottom: 100%;  
-}
-
-.aspect-4o3 {
-  width: 100%;
-  height: 0;
-  padding-bottom: 75%;
-}
-
-.aspect-16o9 {
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%;
-}
-
+// Max-width used to control typographic measure
+.measure { max-width: 40rem; } // 640px
 
 // Widths (Nestable)
 .full-width  { width: 100%;   }
