@@ -1,0 +1,11 @@
+// Media Object
+
+.media, .body {
+  @extend .clearfix;
+}
+.img {
+  @extend .left;
+}
+.img-right {
+  @extend .right;
+}

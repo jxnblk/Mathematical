@@ -38,7 +38,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
   display: block; }
 
 body {
-  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-family: "skolar", Georgia, serif;
   line-height: 1.5;
   font-weight: 400; }
 
@@ -233,6 +233,12 @@ strong, .bold {
 .fit {
   max-width: 100%; }
 
+.rounded, .btn-blue {
+  border-radius: 0.25rem; }
+
+.circle {
+  border-radius: 50%; }
+
 .dark-gray, body {
   color: #444444; }
 
@@ -268,21 +274,6 @@ a {
   a:hover {
     color: #0096cc; }
 
-.border {
-  border: 1px solid; }
-
-.border-top {
-  border-top: 1px solid; }
-
-.border-right {
-  border-right: 1px solid; }
-
-.border-bottom {
-  border-bottom: 1px solid; }
-
-.border-left {
-  border-left: 1px solid; }
-
 .border-dark-gray {
   border-color: #444444; }
 
@@ -294,12 +285,6 @@ a {
 
 .border-white {
   border-color: #fff; }
-
-.rounded, .btn-blue {
-  border-radius: 0.25rem; }
-
-.circle {
-  border-radius: 50%; }
 
 .btn-blue {
   color: #fff;

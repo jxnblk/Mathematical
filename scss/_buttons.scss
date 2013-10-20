@@ -1,0 +1,17 @@
+// Buttons
+
+.button {
+  @extend .inline-block;
+  line-height: 3 * $space;
+  padding: 0 $space;
+}
+
+.button-small {
+  line-height: 2 * $space;
+  padding: 0 .75 * $space;
+}
+
+.button-big {
+  line-height: 4 * $space;
+  padding: 0 $space;
+}
