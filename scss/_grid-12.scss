@@ -1,0 +1,40 @@
+// Grid 12
+//
+// 12 Column desktop grid that goes full-width at small device widths
+
+
+
+
+@mixin build-grid-12 {
+  .grid-12 {
+    @extend .clearfix;
+  }
+  $columns: 12;
+  $gutter: 2.5%;
+  $breakpoint: 640px;
+  $column-width: (100% / $columns) - $gutter;
+  $grid-classes: ();
+  @for $i from 1 through $columns {
+    $grid-classes: $grid-classes, unquote('.col-#{$i}');
+  }
+  #{$grid-classes} {
+    float: left;
+    width: 100%;
+  }
+  @for $i from 1 through $columns {
+    @include break($breakpoint){
+      .grid-12 {
+        margin-right: -$gutter;
+        margin-left: -$gutter;
+        padding-left: $gutter;
+      }
+      .col-#{$i} {
+        width: ($column-width * $i) + ($gutter * ($i - 1));
+        margin-right: $gutter;
+      }
+      .push-#{$i} { margin-left: ($column-width * $i) + ($gutter * ($i)); }
+      .pull-#{$i} { margin-right: ($column-width * $i) + ($gutter * ($i)); }
+    }
+  }
+}
+@include build-grid-12;
