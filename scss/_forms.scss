@@ -1,13 +1,6 @@
-// Base
-
-
-.list {
-  list-style: none;
-  padding-left: 0;
-}
+// Forms
 
 .fieldset {
-  // Adjust the reset for this
   margin: 0;
   @extend .p1;
 }
