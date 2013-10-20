@@ -233,6 +233,9 @@ strong, .bold {
 .fit {
   max-width: 100%; }
 
+.measure {
+  max-width: 40em; }
+
 .rounded, .btn-blue {
   border-radius: 0.25rem; }
 
