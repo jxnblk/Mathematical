@@ -3,8 +3,6 @@
 // 12 Column desktop grid that goes full-width at small device widths
 
 
-
-
 @mixin build-grid-12 {
   .grid-12 {
     @extend .clearfix;

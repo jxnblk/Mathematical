@@ -1,0 +1,81 @@
+// Tiles
+//
+// Percentage-based Grid-like layout for collections of thumbnails or items
+
+.tiles {
+  @extend .clearfix;
+  overflow: hidden;
+  margin: -$space/2;
+}
+
+.tile {
+  float: left;
+  box-sizing: border-box;
+  padding: $space/2;
+  width: 100%;
+  overflow: hidden;
+  img {
+    max-width: 100%;
+    float: left;
+  }
+}
+
+.tiles-small {
+  .tile {
+    width: 25%;
+  }
+  @include break(512px){
+    .tile {
+      width: 16.667%;
+    }
+  }
+  @include break(768px){
+    .tile {
+      width: 12.5%;
+    }
+  }
+  @include break(1024px){
+    .tile {
+      width: 10%;
+    }
+  }
+}
+
+.tiles-medium {
+  .tile {
+    width: 50%;
+  }
+  @include break(512px){
+    .tile {
+      width: 33.333%;
+    }
+  }
+  @include break(768px) {
+    .tile {
+      width: 25%;
+    }
+  }
+  @include break(1024px) {
+    .tile {
+      width: 16.667%;
+    }
+  }
+}
+
+.tiles-large {
+  @include break(512px){
+    .tile {
+      width: 50%;
+    }
+  }
+  @include break(768px){
+    .tile {
+      width: 33.333%;
+    }
+  }
+  @include break(1024px){
+    .tile {
+      width: 25%;
+    }
+  }
+}

@@ -208,7 +208,7 @@ strong, .bold {
 .block {
   display: block; }
 
-.inline-block {
+.inline-block, .button {
   display: inline-block; }
 
 .table {
@@ -218,16 +218,16 @@ strong, .bold {
   display: table-cell;
   vertical-align: middle; }
 
-.clearfix:before, .grid-12:before, .clearfix:after, .grid-12:after {
+.clearfix:before, .grid-12:before, .media:before, .body:before, .clearfix:after, .grid-12:after, .media:after, .body:after {
   content: " ";
   display: table; }
-.clearfix:after, .grid-12:after {
+.clearfix:after, .grid-12:after, .media:after, .body:after {
   clear: both; }
 
-.left {
+.left, .img {
   float: left; }
 
-.right {
+.right, .img-right {
   float: right; }
 
 .fit {
@@ -255,6 +255,30 @@ strong, .bold {
   width: 100%;
   height: 0;
   padding-bottom: 42.5%; }
+
+.relative {
+  position: relative; }
+
+.absolute, .absolute-center {
+  position: absolute; }
+
+.fixed {
+  position: fixed; }
+
+.top-0, .absolute-center {
+  top: 0; }
+
+.right-0, .absolute-center {
+  right: 0; }
+
+.bottom-0, .absolute-center {
+  bottom: 0; }
+
+.left-0, .absolute-center {
+  left: 0; }
+
+.absolute-center {
+  margin: auto; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
   float: left;
@@ -440,6 +464,33 @@ strong, .bold {
 
   .pull-12 {
     margin-right: 100%; } }
+.button {
+  line-height: 3rem;
+  padding: 0 1rem; }
+
+.button-small {
+  line-height: 2rem;
+  padding: 0 0.75rem; }
+
+.button-big {
+  line-height: 4rem;
+  padding: 0 1rem; }
+
+.border {
+  border: 1px solid; }
+
+.border-top {
+  border-top: 1px solid; }
+
+.border-right {
+  border-right: 1px solid; }
+
+.border-bottom {
+  border-bottom: 1px solid; }
+
+.border-left {
+  border-left: 1px solid; }
+
 .rounded, .btn-blue {
   border-radius: 0.25rem; }
 
