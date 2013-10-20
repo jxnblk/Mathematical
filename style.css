@@ -1,123 +1,240 @@
-article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
-  display: block; }
+/*
 
-audio, canvas, video {
-  display: inline-block; }
+  BASSCSS
 
-audio:not([controls]) {
-  display: none;
-  height: 0; }
+  Part reset, part boilerplate, part framework, all minimal.
 
-[hidden] {
-  display: none; }
+  BASSCSS is a small reset and collection of simple type and layout
+  classes that can be used as the basis for any web project.
+  Use it out of the box or as a base for a larger SASS project.
 
-body, h1, h2, h3, h4, h5, h6, p, ul, ol, dl {
-  margin: 0;
-  padding: 0; }
 
-a:focus {
-  outline: thin dotted; }
+  Contents:
+  1. Reset
+  2. Typography
+     a. Default Font Stack
+     b. Base Type Scale
+     c. Responsive Type Scale
+     d. Utilities
+  3. Layout
+     a. Margins
+     b. Padding
+     c. Display
+     d. Utilities
 
-a:active, a:hover {
-  outline: 0; }
 
-b, strong {
-  font-weight: bold; }
+  Made with love by Jxnblk
 
-dfn {
-  font-style: italic; }
-
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
-
-mark {
-  background: #ff0;
-  color: #000; }
-
-code, kbd, pre, samp {
-  font-family: monospace, serif;
-  font-size: 1em; }
-
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-small {
-  font-size: 80%; }
-
-sub, sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-sup {
-  top: -0.5em; }
-
-sub {
-  bottom: -0.25em; }
-
-img {
-  border: 0; }
-
-svg:not(:root) {
-  overflow: hidden; }
-
-figure {
+*/
+body, h1, h2, h3, h4, h5, h6, dl, ol, ul, p,
+button, input, select, textarea {
   margin: 0; }
-
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-legend {
-  border: 0;
-  padding: 0; }
 
 button, input, select, textarea {
   font-family: inherit;
-  font-size: 100%;
-  margin: 0; }
+  font-size: 100%; }
 
-button, input {
-  line-height: normal; }
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+  display: block; }
 
-button, select {
-  text-transform: none; }
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  line-height: 1.5;
+  font-weight: 400; }
 
-button, html input[type="button"], input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer; }
+h1, .h1 {
+  font-size: 2rem;
+  line-height: 1.25; }
 
-button[disabled], html input[disabled] {
-  cursor: default; }
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 1.25; }
 
-input[type="checkbox"], input[type="radio"] {
-  box-sizing: border-box;
-  padding: 0; }
+h3, h4, h5, h6, dl, ol, ul, p, .p, .input {
+  font-size: 1.125em; }
 
-input[type="search"] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box; }
+small, .small {
+  font-size: .875em; }
 
-input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
+@media (min-width: 768px) {
+  .responsive .h1, .responsive.h1 {
+    font-size: 4rem; }
+  .responsive .h2, .responsive.h2 {
+    font-size: 2rem; }
+  .responsive .p, .responsive .input, .responsive.p, .responsive.input {
+    font-size: 1.25rem; }
+  .responsive .small, .responsive.small {
+    font-size: 1rem; } }
+@media (min-width: 1024px) {
+  .responsive .h1, .responsive.h1 {
+    font-size: 6rem; }
+  .responsive .h2, .responsive.h2 {
+    font-size: 3rem; } }
 
-button::-moz-focus-inner, input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
+strong, .bold {
+  font-weight: bold; }
 
-textarea {
-  overflow: auto;
-  vertical-align: top; }
+.regular {
+  font-weight: normal; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
+.caps {
+  text-transform: uppercase;
+  letter-spacing: .2em; }
+
+.center {
+  text-align: center; }
+
+.right-align {
+  text-align: right; }
+
+.type-margins h1, .type-margins .h1 {
+  margin-bottom: 1rem; }
+.type-margins h2, .type-margins .h2 {
+  margin-bottom: 1rem; }
+.type-margins h3, .type-margins h4, .type-margins h5, .type-margins h6, .type-margins p, .type-margins dl, .type-margins ol, .type-margins ul {
+  margin-bottom: 1rem; }
+
+.m1 {
+  margin: 1rem; }
+
+.mt1 {
+  margin-top: 1rem; }
+
+.mr1 {
+  margin-right: 1rem; }
+
+.mb1, .input, .select {
+  margin-bottom: 1rem; }
+
+.ml1 {
+  margin-left: 1rem; }
+
+.m2 {
+  margin: 2rem; }
+
+.mt2 {
+  margin-top: 2rem; }
+
+.mr2 {
+  margin-right: 2rem; }
+
+.mb2 {
+  margin-bottom: 2rem; }
+
+.ml2 {
+  margin-left: 2rem; }
+
+.m3 {
+  margin: 3rem; }
+
+.mt3 {
+  margin-top: 3rem; }
+
+.mr3 {
+  margin-right: 3rem; }
+
+.mb3 {
+  margin-bottom: 3rem; }
+
+.ml3 {
+  margin-left: 3rem; }
+
+.m4 {
+  margin: 4rem; }
+
+.mt4 {
+  margin-top: 4rem; }
+
+.mr4 {
+  margin-right: 4rem; }
+
+.mb4 {
+  margin-bottom: 4rem; }
+
+.ml4 {
+  margin-left: 4rem; }
+
+.mxa {
+  margin-right: auto;
+  margin-left: auto; }
+
+.p1, .fieldset {
+  padding: 1rem; }
+
+.px1 {
+  padding-right: 1rem;
+  padding-left: 1rem; }
+
+.py1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
+
+.p2 {
+  padding: 2rem; }
+
+.px2 {
+  padding-right: 2rem;
+  padding-left: 2rem; }
+
+.py2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.p3 {
+  padding: 3rem; }
+
+.px3 {
+  padding-right: 3rem;
+  padding-left: 3rem; }
+
+.py3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem; }
+
+.p4 {
+  padding: 4rem; }
+
+.px4 {
+  padding-right: 4rem;
+  padding-left: 4rem; }
+
+.py4 {
+  padding-top: 4rem;
+  padding-bottom: 4rem; }
+
+.inline {
+  display: inline; }
+
+.block {
+  display: block; }
+
+.inline-block, .button {
+  display: inline-block; }
+
+.table {
+  display: table; }
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle; }
+
+.clearfix:before, .media:before,
+.body:before, .clearfix:after, .media:after,
+.body:after {
+  content: " ";
+  display: table; }
+.clearfix:after, .media:after,
+.body:after {
+  clear: both; }
+
+.left, .img {
+  float: left; }
+
+.right, .img-right {
+  float: right; }
+
+.fit, .input {
+  max-width: 100%; }
 
 .list {
   list-style: none;
